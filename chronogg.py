@@ -197,4 +197,5 @@ def main():
 
 if __name__ == '__main__':
     with setup_logging():
+        logging.info(f"Current proxy settings: {os.environ['HTTP_PROXY']}")
         main()
